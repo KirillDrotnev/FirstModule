@@ -16,6 +16,7 @@ string[] Input()
     } 
 }
 
+// Выборка нужных элементов
 string[] Sampling(string[] input)
 {
     string[] result = new string[input.Length];
@@ -28,6 +29,19 @@ string[] Sampling(string[] input)
                 result[j] = input[i];
             }
         }
+        else continue
     }
     return result;
+}
+
+// Вывод результата
+void PrintResult(string[] result)
+{
+    for (int i = 0; i < result.Length; i++)
+    {
+        if (result[i].Length != 0) 
+        {
+            Console.WriteLine(result[i]);
+        }
+    }
 }
