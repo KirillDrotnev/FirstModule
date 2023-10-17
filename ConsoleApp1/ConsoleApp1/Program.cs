@@ -1,6 +1,6 @@
 ﻿void Main()
 {
-
+    PrintResult(Sampling(Input()));
 }
 
 // Получениие данных от пользователя
